@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tommy Tegar Kurniawan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #080d2b, #172b60, #542b91);
+            color: white;
+        }
+
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.2);
+        }
+
+        header h2 {
+            color: #65c7ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #65c7ff;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #45caff, #bd76ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #d5d9ff;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(90deg, #2196f3, #8e44ad);
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #5e8bff;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #70d2ff;
+        }
+
+        .profil {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        }
+
+        .profil p {
+            margin: 15px 0;
+            font-size: 17px;
+            overflow-wrap: anywhere;
+        }
+
+        .keahlian {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(100,150,255,0.2);
+        }
+
+        .card h3 {
+            color: #75d5ff;
+            margin: 15px 0;
+        }
+
+        .icon {
+            font-size: 45px;
+        }
+
+        .kontak {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.3);
+            color: #ccc;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MY PORTFOLIO</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#skill">Skill</a>
+            <a href="#hobi">Hobi</a>
+        </nav>
+    </header>
+
+    <!-- HALAMAN UTAMA -->
+    <div class="hero" id="home">
+        <div>
+            <h1>Halo, Saya <br>
+                <span>Tommy Tegar Kurniawan</span>
+            </h1>
+
+            <p>Pelajar | Teknologi Jaringan | Fiber Optik</p>
+
+            <a href="#profil" class="btn">Lihat Profil Saya</a>
+        </div>
+    </div>
+
+    <!-- PROFIL -->
+    <section id="profil">
+        <h2 class="judul">Profil Pribadi</h2>
+
+        <div class="profil">
+            <p><b>Nama:</b> Tommy Tegar Kurniawan</p>
+            <p><b>Email:</b> tommykurnia256@gmail.com</p>
+            <p><b>Nomor HP:</b> 0857-8467-6652</p>
+            <p><b>Alamat:</b> Desa Ngaglik, Dusun Biluk, RT 1 RW 1</p>
+            <p><b>Keahlian:</b> Instalasi Kabel FO / Fiber Optik</p>
+            <p><b>Hobi:</b> Bola Voli</p>
+        </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill">
+        <h2 class="judul">Galeri Skill</h2>
+
+        <div class="keahlian">
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Fiber Optik</h3>
+                <p>Mempelajari instalasi kabel fiber optik sebagai media transmisi jaringan internet.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔧</div>
+                <h3>Instalasi Kabel</h3>
+                <p>Memahami pemasangan dan penataan kabel jaringan dengan rapi.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Jaringan Komputer</h3>
+                <p>Mempelajari teknologi jaringan komputer dan konektivitas internet.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOBI -->
+    <section id="hobi">
+        <h2 class="judul">Hobi Saya</h2>
+
+        <div class="keahlian">
+            <div class="card">
+                <div class="icon">🏐</div>
+                <h3>Bola Voli</h3>
+                <p>Saya menyukai olahraga bola voli karena melatih kerja sama tim dan sportivitas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak">
+        <h2 class="judul">Hubungi Saya</h2>
+
+        <p>Terima kasih telah mengunjungi website profil saya.</p>
+        <br>
+
+        <a href="mailto:tommykurnia256@gmail.com" class="btn">
+            Kirim Email
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Tommy Tegar Kurniawan | My Portfolio</p>
+    </footer>
+
+</body>
+</html>
